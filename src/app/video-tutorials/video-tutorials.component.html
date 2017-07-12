@@ -12,18 +12,18 @@
         <div class="col-md-4">
 
           <ul class="list-group">
-            <li class="list-group-item"> NOW PLAYING</li>
+            <li class="list-group-item list-title"> NOW PLAYING</li>
             <li class="list-group-item">
               <div>
                   <span>{{tutorialsList[0].title}}</span> <br/>
                   <span>{{tutorialsList[0].publisher_name.first}} {{tutorialsList[0].publisher_name.last}}</span>
               </div>
             </li>
-            <li class="list-group-item"> NEXT UP </li>
+            <li class="list-group-item list-title"> NEXT UP </li>
             <li class="list-group-item" *ngFor=" let tut of tutorialsList">
               <div>
-                  <span>{{tut.title}}</span> <br/>
-                  <span>{{tut.publisher_name.first}} {{tut.publisher_name.last}}</span>
+                  <span class="video-title">{{tut.title}}</span> <br/>
+                  <span class="publisher-name">{{tut.publisher_name.first}} {{tut.publisher_name.last}}</span>
               </div>
             </li>
 
